@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background: #ffe8cc
+}
+
+h1{
+  font-size: 45px;
+  color:#865e2a;
+  font-weight: bold;
+}
+h2,h3{
+  text-align: center;
+  color:#865e2a;
+  font-weight: bold;
+}
+hr.cv_line{
+  height:3px;
+  border: 0px;
+  color:#cc9143;
+  background-color: #cc9143;
+}
+/*-------------Menüsor--------------------------*/
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cc9143;
+}
+  
+  ul.nav li {
+    float: left;
+}
+  
+  ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  ul.nav li a:hover:not(.active) {
+    background-color: #a87634;
+}
+  
+  ul.nav li a.active {
+    background-color: #865e2a;
+}
+  
+  ul.nav li.right {
+    float: right;
+}
+/*---------------------------------------*/
+.respons{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.9999%;
+  padding-bottom: 6px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+/*---------------------------------------*/
+.cv{
+  width:80%;
+  
+}
+.cv_default{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.cv_text{
+  font-size: 25px;
+  padding-left: 20px;
+}
+/*---------------------------------------*/
+table{
+  text-align: center;
+  border: solid 2px #865e2a;
+  width: 60%;
+}
+table td{
+  
+  border: dotted 1px #865e2a;
+}
+.other-month{
+  background: gray;
+  color:red;
+}
+/*---------------------------------------*/
+.chess{
+    height: 600px;
+    width: 600px;
+    background: conic-gradient(
+        #efc89f 0.249turn,
+        #865e2a 0.25turn 0.5turn,
+        #efc89f 0.501turn 0.75turn,
+        #865e2a 0.75turn) top left / 25% 25% repeat;
+    border: 2px solid #865e2a;
+    position: relative;
+}
+/*---------------------------------------*/
+div.gallery {
+  border: 1px solid #efc89f;
+}
+
+div.gallery:hover {
+  border: 1px solid #865e2a;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*-------------------------------------------*/
+.video-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video{
+  padding-bottom: 65px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 30px;
+  height: 20rem;
+  width: 30rem;
+}
+/*-------------------------------------------*/
+@media screen and (max-width: 700px) {
+    ul.nav li.right, 
+    ul.nav li {
+        float: none;
+    }
+    .chess{
+        height: 100vw;
+        width: 100vw;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+    .cv_default{
+      display: initial;
+    }
+    .cv_text{
+      text-align:center;
+    }
+    .cv{
+      text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
